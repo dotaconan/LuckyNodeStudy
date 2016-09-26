@@ -6,5 +6,12 @@
 
 ## 案例一：人生的意义[study readline]
 
-> node node-study-whatIsYourLife
+> $ node node-study-whatIsYourLife
 
+> port:12570
+
+## 案例二：基于net的最简易web服务器[study net]
+
+> $ node node-study-net-webserver
+
+> port:12571

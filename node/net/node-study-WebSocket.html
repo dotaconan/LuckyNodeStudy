@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>node-study-tcp</title>
+</head>
+<body>
+<h1>node-study-tcp</h1>
+<pre>
+
+    </pre>
+<h2>example</h2>
+<div id="result"></div>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var socket = io('http://localhost:12571');
+    //响应服务器端服务接口
+    socket.on('news', function (data) {
+        console.log(data);
+        //响应服务器端事件
+        socket.emit('my other event', {my: 'data'});
+    });
+</script>
+<script type="text/javascript">
+    var WebSocketUtil = (function () {
+        return {
+            defaults: {
+                ids: {
+                    result: "result"
+                }
+            },
+            append: function (msg) {
+                var _this = this;
+                var result = document.getElementById(_this.defaults.ids.result);
+                var msgHtml = "<p>" + msg + "</p>";
+                result.innerHTML = result.innerHTML + msgHtml;
+            }
+        }
+    })();
+    if (!window.WebSocket) {
+        WebSocketUtil.append("对不起,您的不支持WebSocket!");
+    }
+    else {
+//        var opt = {
+//            server: "ws://192.168.27.180:12571"
+//        };
+//        var ws = new WebSocket(opt.server);
+//        WebSocketUtil.append("成功创建WebSocket!");
+//        ws.onopen = function () {
+//            console.log("open");
+//
+//            ws.send("hello");
+//        };
+//        ws.onmessage = function (evt) {
+//            console.log(evt.data);
+//        };
+//        ws.onclose = function (evt) {
+//            console.log("WebSocketClosed!");
+//        };
+//        ws.onerror = function (evt) {
+//            console.log("WebSocketError!");
+//        };
+    }
+
+
+</script>
+</body>
+</html>

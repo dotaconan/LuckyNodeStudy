@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/dotaconan/LuckyNodeStudy/issues"
   },
-  "homepage": "https://github.com/dotaconan/LuckyNodeStudy#readme"
+  "homepage": "https://github.com/dotaconan/LuckyNodeStudy#readme",
+  "devDependencies": {
+    "socket.io": "^1.4.8"
+  }
 }
