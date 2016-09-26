@@ -1,0 +1,34 @@
+# project
+
+
+# build
+dist/
+coverage
+
+# IDE files
+node_modules
+bower_components
+.idea/
+.git
+#*.iml
+.ipr
+.iws
+
+# temp and sys
+*~
+~*
+*.diff
+*.patch
+*.bak
+.DS_Store
+Thumbs.db
+*.log
+
+# other
+.project
+.*proj
+.svn/
+*.swp
+*.swo
+*.pyc
+*.pyo

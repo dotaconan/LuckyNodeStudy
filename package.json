@@ -1,0 +1,26 @@
+{
+  "name": "luckynodestudy",
+  "version": "1.0.0",
+  "description": "LuckyNodeStudy is a project for study node with many interesting example for you(LuckyNodeStudy是一个包含了很多有意思的学习node的开源项目)",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dotaconan/LuckyNodeStudy.git"
+  },
+  "keywords": [
+    "node",
+    "study",
+    "study",
+    "node",
+    "LuckyNodeStudy"
+  ],
+  "author": "LuckyJourney",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dotaconan/LuckyNodeStudy/issues"
+  },
+  "homepage": "https://github.com/dotaconan/LuckyNodeStudy#readme"
+}
