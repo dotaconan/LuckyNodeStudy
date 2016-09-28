@@ -33,3 +33,7 @@
 > node中很多基于异步变成：比如读取文件、网络请求等，很多时候需要一个一个按照顺序执行，这就像一步一个脚印，走好前一步才能走到下一步
 
 > $ node node-study-async
+
+> tags
+- asysc.series
+- asysc.waterfall

@@ -9,3 +9,6 @@
 ### 15:40
 - 增加node-study-net-webserver.js简易web服务器示例
 - 增加node-study-WebSocket基于socket.io的websocket演示demo
+
+## 2016.9.28
+- 增加node异步编程案例，async的series、waterfall用法
