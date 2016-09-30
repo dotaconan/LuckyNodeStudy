@@ -2,6 +2,31 @@
 
 > LuckyNodeStudy是一个包含了很多有意思的学习node的开源项目。(LuckyNodeStudy is a project for studying node with many interesting example)
 
+## browserify：nodejs平台代码运用在浏览器平台案例
+
+> 通过本案例，您可以体会到browserify一种独特的思路：nodejs平台代码打包为web使用js的一种打包方案，除seajs/requirejs浏览器依赖外的独立js资源打包方案
+项目中也采用了多种好用的功能能够
+-编译less、更改后自动编译
+-Browserify编译nodejs平台下js为独立js
+-更改less、js、html自动刷新页面
+-web服务器
+
+### 安装nodejs
+nodejs安装nodejs程序安装
+
+### 安装gulp
+运行 install-gulp.bat
+
+### 安装node引用组建
+运行 install.bat
+
+### 运行
+运行 run.bat
+
+### 浏览器打开地址
+- 浏览器输入：http://127.0.0.1:12580/browserify/html/page_index.html
+
+
 ## node基础篇
 
 ### 案例一：人生的意义[study readline]
@@ -37,3 +62,5 @@
 > tags
 - asysc.series
 - asysc.waterfall
+
+

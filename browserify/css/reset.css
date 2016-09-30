@@ -1,0 +1,108 @@
+@charset "utf-8";
+html {
+  color: #444;
+  background: #fff;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html,
+body {
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: Tahoma, "Helvetica Neue", "Helvetica", "Hiragino Sans GB", 'Microsoft Yahei', Arial, sans-serif;
+}
+a,
+abbr,
+acronym,
+address,
+article,
+aside,
+audio,
+blockquote,
+body,
+button,
+canvas,
+caption,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+dialog,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+html,
+iframe,
+img,
+ins,
+label,
+legend,
+li,
+mark,
+menu,
+meter,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+progress,
+q,
+s,
+section,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+u,
+ul,
+var,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+footer,
+header,
+menu,
+nav,
+section,
+video {
+  display: block;
+}
+i,
+em {
+  font-style: normal;
+}
