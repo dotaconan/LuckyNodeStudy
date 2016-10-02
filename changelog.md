@@ -11,7 +11,7 @@
 - 增加node-study-WebSocket基于socket.io的websocket演示demo
 
 ## 2016.9.28
-- 增加node异步编程案例，async的series、waterfall用法
+- 加node异步编程案例，async的series、waterfall用法
 
 ## 2016.9.30
 ### browserify：nodejs平台代码运用在浏览器平台案例
@@ -38,4 +38,10 @@ nodejs安装nodejs程序安装
 
 ### 浏览器打开地址
 - 浏览器输入：http://127.0.0.1:12580/browserify/html/page_index.html
+
+## 2016.10.2
+### 19:50
+- 增加mac/linux下安装、编译脚本:install.sh/run.sh
+- 修复package.json插件不全问题,原先运行比过年没有完全安装执行
+- 如遇到无法安装需要sudo 管理员权限
 
