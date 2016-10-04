@@ -63,4 +63,18 @@ nodejs安装nodejs程序安装
 - asysc.series
 - asysc.waterfall
 
+### 案例五：事件驱动，注册事件、响应事件。起床、（听新闻）、吃早饭、去上班[study events]
+
+> node中使用on注册事件，使用emit执行事件，现在很多代码语法都按照这个思路去做。比如socket.io也是语法上一样。
+var events = require("events");
+var event = new events.EventEmitter();
+//reg event
+event.on('xx', function() {
+    //do something
+}
+//do something
+event.emit("xx");
+> $ node node-study-event-EventEmitter
+
+
 

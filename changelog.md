@@ -45,3 +45,6 @@ nodejs安装nodejs程序安装
 - 修复package.json插件不全问题,原先运行比过年没有完全安装执行
 - 如遇到无法安装需要sudo 管理员权限
 
+## 2016.10.4
+### 11:20
+- 增加node的EventEmitter事件驱动用法案例：node-study-event-EventEmitter.js
