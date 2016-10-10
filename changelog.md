@@ -48,3 +48,12 @@ nodejs安装nodejs程序安装
 ## 2016.10.4
 ### 11:20
 - 增加node的EventEmitter事件驱动用法案例：node-study-event-EventEmitter.js
+
+## 2016.10.10
+### 17:09
+- react+seajs+backbone
+>1. jquery 2. underscore 3. backbone 4. reactjs 5. seajs
+
+- jsx动态监听编译为js
+- 运行方式：$ gulp reactTask
+- 浏览器打开 http://127.0.0.1:12550

@@ -78,5 +78,10 @@ event.on('xx', function() {
 event.emit("xx");
 > $ node node-study-event-EventEmitter
 
+## react+seajs+backbone+gulp环境
+
+> 通过本案例，您可以体会到browserify一种独特的思路：nodejs平台代码打包为web使用js的一种打包方案，除seajs/requirejs浏览器依赖外的独立js资源打包方案
+项目中也采用了多种好用的功能能够
+
 
 

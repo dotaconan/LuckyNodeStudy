@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hello React Backbone</title>
+</head>
+<body>
+<div id="example">
+
+</div>
+
+<script src="../sea-modules/seajs/seajs/2.2.0/sea-debug.js"></script>
+<script>
+  // Set configuration
+  seajs.config({
+    base: "../sea-modules/",
+    alias: {
+      "jquery": "jquery/jquery/1.10.1/jquery.js",
+      "react":"reactjs/react.js",
+      "underscore": "gallery/underscore/1.4.4/underscore.js",
+      "backbone": "gallery/backbone/1.0.0/backbone.js"
+    }
+  });
+  seajs.use("../static/hello/src/build/app", function (reactApp){
+      var model = {name:'mike',location:'Beijing'};
+      var reactInstance = reactApp.getInstance(model);
+  });
+</script>
+
+</body>
+</html>

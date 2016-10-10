@@ -1,3 +1,4 @@
+var loader = require('gulp-load-plugins')();
 var gulp = require("gulp");
 var less = require('gulp-less');
 var clean = require('gulp-clean');
@@ -12,9 +13,14 @@ var connect = require('gulp-connect');
 //node报错友好提示
 var plumber = require('gulp-plumber');
 
+var gulpReact = require('gulp-react');
+
+
 var config = {
     browserify: "browserify",
-    browserifyPort: 12580
+    browserifyPort: 12580,
+    react: "react",
+    reactPort: 12550
 };
 
 //清理css文件夹
@@ -86,6 +92,34 @@ gulp.task('watcher-browserify-html', function () {
     gulp.watch([config.browserify + '/html/**/*.html'], ['browserify-html-reload']);
 });
 
+//2016.10.10 react服务器搭建
+//创建服务器
+gulp.task('react-connect', function () {
+    connect.server({
+        host: '127.0.0.1',           //Server host
+        root: "./",
+        port: config.reactPort,
+        debug: true,
+        livereload: true
+    });
+});
+
+
 gulp.task('default', ['watcher-browserify-js', 'watcher-browserify-less', 'watcher-browserify-html', 'browserify-connect'], function () {
     console.log("default task done");
+});
+
+//重新reload
+gulp.task('watcher-react-jsx', function () {
+    gulp.watch([config.react + '/myreact/**/*.*'], ['react-build']);
+});
+
+gulp.task('react-build', function () {
+    return gulp.src([config.react + '/myreact/**/*.jsx'])
+        .pipe(gulpReact())
+        .pipe(gulp.dest(config.react + '/static/'));
+});
+
+gulp.task('reactTask', ['react-connect', 'react-build', 'watcher-react-jsx'], function () {
+    console.log("react task done");
 });
