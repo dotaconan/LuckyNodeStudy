@@ -15,13 +15,13 @@
   seajs.config({
     base: "../sea-modules/",
     alias: {
-      "jquery": "jquery/jquery/1.10.1/jquery.js",
+      "$": "jquery/jquery/1.10.1/jquery.js",
       "react":"reactjs/react.js",
       "underscore": "gallery/underscore/1.4.4/underscore.js",
       "backbone": "gallery/backbone/1.0.0/backbone.js"
     }
   });
-  seajs.use("../static/hello/src/build/app", function (reactApp){
+  seajs.use("../static/app", function (reactApp){
       var model = {name:'mike',location:'Beijing'};
       var reactInstance = reactApp.getInstance(model);
   });
