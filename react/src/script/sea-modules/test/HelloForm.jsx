@@ -1,6 +1,6 @@
 define(function(require,exports, module) {
     var React = require('react');
-    var HelloForm = React.createClass({displayName: "HelloForm",
+    var HelloForm = React.createClass({
         handlePost:function(e){
             var myName = this.refs.myName.getDOMNode().value.trim();
             var myLocation = this.refs.myLocation.getDOMNode().value.trim();
@@ -25,14 +25,14 @@ define(function(require,exports, module) {
         },
         render: function () {
             return (
-                React.createElement("div", null, 
-                    React.createElement("form", null, 
-                        React.createElement("input", {type: "text", ref: "myName"}), 
-                        React.createElement("input", {type: "text", ref: "myLocation"}), 
-                        React.createElement("input", {type: "button", value: "Post", onClick: this.handlePost}), 
-                        React.createElement("input", {type: "button", value: "Update", onClick: this.handleUpdate})
-                    )
-                )
+                <div>
+                    <form>
+                        <input type="text" ref="myName" />
+                        <input type="text" ref="myLocation" />
+                        <input type="button" value="Post" onClick={this.handlePost} />
+                        <input type="button" value="Update" onClick={this.handleUpdate} />
+                    </form>
+                </div>
             );
         }
     });

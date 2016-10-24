@@ -10,7 +10,7 @@ define(function(require,exports, module) {
             this.getBackboneModel().unbind(null, null, this);
         }
     };
-    var HelloComponents = React.createClass({displayName: "HelloComponents",
+    var HelloComponents = React.createClass({
         mixins: [BackboneMixin],
         getBackboneModel: function () {
             return this.props.data;
@@ -26,10 +26,10 @@ define(function(require,exports, module) {
         },
         render: function () {
             return (
-                React.createElement("div", null, 
-                    React.createElement(HelloInfo, {data: this.props.data}), 
-                    React.createElement(HelloForm, {onUpdate: this.handleUpdate, onPost: this.handlePost})
-                )
+                <div>
+                    <HelloInfo data={this.props.data}/>
+                    <HelloForm onUpdate={this.handleUpdate} onPost={this.handlePost} />
+                </div>
             );
         }
     });

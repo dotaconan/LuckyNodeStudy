@@ -8,7 +8,7 @@ define(function(require,exports, module) {
             this.getBackboneModel().unbind(null, null, this);
         }
     };
-    HelloMessage = React.createClass({displayName: "HelloMessage",
+    var HelloMessage = React.createClass({
         mixins: [BackboneMixin],
         getBackboneModel: function () {
             return this.props.data;
@@ -20,9 +20,9 @@ define(function(require,exports, module) {
         },
         render: function () {
             return (
-                React.createElement("div", null, React.createElement("input", {type: "button", value: "Post", onClick: this.handleChange}), 
-                    React.createElement("div", null, "Hello,", this.props.data.attributes.name, ",I am in ", this.props.data.attributes.location)
-                )
+                <div><input type="button" value="Post" onClick={this.handleChange} />
+                    <div>Hello,{this.props.data.attributes.name},I am in {this.props.data.attributes.location}</div>
+                </div>
             );
         }
     });

@@ -1,5 +1,5 @@
-var loader = require('gulp-load-plugins')();
 var gulp = require("gulp");
+var loader = require('gulp-load-plugins')();
 var less = require('gulp-less');
 var clean = require('gulp-clean');
 var browserify = require("gulp-browserify");
@@ -111,13 +111,17 @@ gulp.task('default', ['watcher-browserify-js', 'watcher-browserify-less', 'watch
 
 //重新reload
 gulp.task('watcher-react-jsx', function () {
-    gulp.watch([config.react + '/myreact/**/*.*'], ['react-build']);
+    gulp.watch([config.react + '/src/script/**/*.js',config.react + '/src/script/**/*.jsx'], ['react-build']);
 });
 
 gulp.task('react-build', function () {
-    return gulp.src([config.react + '/myreact/**/*.jsx'])
+    return gulp.src([config.react + '/src/script/**/*.js', config.react + '/src/script/**/*.jsx', "!" + config.react + '/src/script/lib/**/*.*', "!" + config.react + '/src/script/sea-modules/reactjs/**/*.*', "!" + config.react + '/src/script/sea-modules/jquery/**/*.*'])
+        .pipe(loader.plumber())
+        .pipe(loader.babel({
+            presets: ['es2015', "react", "stage-0"]
+        }))
         .pipe(gulpReact())
-        .pipe(gulp.dest(config.react + '/static/'));
+        .pipe(gulp.dest(config.react + '/static/script/'));
 });
 
 gulp.task('reactTask', ['react-connect', 'react-build', 'watcher-react-jsx'], function () {

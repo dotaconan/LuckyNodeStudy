@@ -1,3 +1,18 @@
+# react 后端输出型项目 / 前端模式 
+
+- react
+- es6
+
+## react后端输出型
+
+> 所有代码均通过编译
+
+## react前端模式 
+
+> 代码执行前端进行编译依赖
+
+
+
 #Hello-React-Backbone
 
 **目的：**做Backbone和ReactJS的整合，该例子使用了Backbone的Model和ReactJS整合，可以认为是ReactJS替换掉了Backbone的View，这个是入门小例子 。
@@ -37,3 +52,5 @@ ps：你要想在define作用域内直接使用JSXTransformer.js，请确定能�
          
 **有做组件分离哦**
 参考：react-backbone的TodoMVC<https://github.com/tastejs/todomvc/tree/master/examples/react-backbone>
+
+
